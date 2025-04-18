@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="icon" th:href="${favicon}" />
+        <title th:text="${title}"></title>
+        <style>
+            body {
+                height: 100%;
+                width: 100%;
+                font-family: "Noto Sans";
+                font-weight: 200;
+                margin: 0 auto;
+            }
+            .j-body{
+                height: 100%; 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                justify-content: center;
+            }
+            .j-text {
+                font-family: 'Noto Sans';
+                font-weight: 500;
+                font-size: 30px;
+                color: #527fba;
+                text-align: center;
+                line-height: 30px;
+            }
+            .j-img{
+                width: 300px; 
+                margin-bottom: 30px;
+            }
+            .j-text-body{
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                justify-content: center;
+                row-gap: 35px;
+                bottom: 250px;
+                left: 42%;
+            }
+            .j-flex{
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                row-gap: 15px;
+            }
+            .j-resend-button{
+                color: #374e93;
+                font-size: 15px;
+                cursor: pointer;
+                font-family: 'Noto Sans';
+                text-decoration: underline;
+            }
+            .j-subtitle{
+                font-family: 'Noto Sans';
+                font-weight: 500;
+                font-size: 15px;
+                text-align: center;
+            }
+            .j-mail-sent-text{
+                height: 100px;
+                font-family: 'Noto Sans';
+                font-weight: 500;
+                font-size: 15px;
+                text-align: center;
+            }
+            .j-light-text{
+                font-family: 'Noto Sans';
+                font-weight: 400;
+                font-size: 13px;
+            }
+        </style>
+        <script>
+
+            let createSuccessElement = () => {
+                let mail_sent_text = document.createElement("div")
+                mail_sent_text.innerHTML = '<div class="j-flex">Invitation email sent!</div>'
+                mail_sent_text.className = "j-mail-sent-text";
+                let button = document.getElementById("resend-container")
+                button.parentNode.replaceChild(mail_sent_text, button)
+            }
+
+            let createErrorElement = () => {
+                let mail_sent_text = document.createElement("div")
+                mail_sent_text.innerHTML = '<div class="j-light-text">Something went wrong! Contact <a href="mailTo:support@buyerstage.io">support@buyerstage.io</a></div>'
+                mail_sent_text.className = "j-mail-sent-text";
+                let button = document.getElementById("resend-container")
+                button.parentNode.replaceChild(mail_sent_text, button)
+            }
+
+            const _resendInvite = () => {
+                const resend_url    =   "https://public.buyerstage.io/resendInvite";
+                const token         =   window.location.pathname.split("/portal/")[1];
+                let headers = {
+                    "j-buyerstage-room-token"   :   token
+                }
+                fetch(resend_url, { method: 'POST',  headers: headers })
+                    .then(response => {
+                        if(response.status === "error"){
+                            createErrorElement()
+                        }else{
+                            createSuccessElement()
+                        }
+                    })
+            }
+          </script>
+    </head>
+    <body class="j-body">
+        <img class="j-img" src="https://static.buyerstage.io/static-assets/email-sent.svg" alt="Page not found" />
+        <div class="j-text-body">
+            <div class="j-text">An invitation is waiting for you in your inbox.</div>
+            <div id="resend-container" class="j-flex">
+                <div class="j-subtitle">Haven't recieved invitation email?</div>
+                <div id="resend-button" class="j-resend-button" onclick="_resendInvite()">Resend invitation</div>
+            </div>
+        </div>
+    </body>
+</html>

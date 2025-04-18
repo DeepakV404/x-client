@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" style="height:100%;">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">     -->
+    <meta property="og:image" th:content="${ogImage}"/>
+    <meta property="og:title" th:content="${ogTitle}"/>
+    <link rel="icon" th:href="${favicon}" />
+    <title th:text="${title}"></title>
+    <style>
+
+      @font-face {
+        font-family: 'Material Symbols Rounded';
+        font-display: auto;
+        src: 
+          local('Material Symbols Rounded'),
+          url(https://static.buyerstage.io/icons/MaterialSymbolsRounded.woff2) format('woff2'),
+      }
+      .material-symbols-rounded {
+        font-family: 'Material Symbols Rounded';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      @font-face {
+          font-family: "Inter300";
+          src: url("/font/inter/Inter300.ttf") format("truetype");
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: "Inter";
+          src: url("/font/inter/Inter400.ttf") format("truetype");
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: "Inter400";
+          src: url("/font/inter/Inter400.ttf") format("truetype");
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: "Inter500";
+          src: url("/font/inter/Inter500.ttf") format("truetype");
+          font-display: swap;
+      }
+
+      @font-face {
+          font-family: "Inter600";
+          src: url("/font/inter/Inter600.ttf") format("truetype");
+          font-display: swap;
+      }
+      @font-face {
+          font-family: "Inter700";
+          src: url("/font/inter/Inter700.ttf") format("truetype");
+          font-display: swap;
+      }
+    </style>
+  </head>
+  <body style="height:100%; margin: 0px">
+    <div id="root" style="height:100%;"></div>
+    <span class="material-symbols-rounded" style="visibility: hidden; position: absolute; font-size: 0px;">&#xe88b;</span>
+    <script type="module" src="/src/main.tsx">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="https://static.buyerstage.io/static-assets/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <title>Buyerstage | Not Found</title>
+        <style>
+            body {
+                height: 100%;
+                width: 100%;
+                font-family: "Noto Sans";
+                font-weight: 200;
+                margin: 0 auto;
+            }
+            .j-body{
+                height: 100%; 
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                justify-content: center;
+            }
+            .j-text {
+                font-family: 'Noto Sans';
+                font-weight: 500;
+                font-size: 30px;
+                color: #527fba;
+                text-align: center;
+                line-height: 30px;
+            }
+            .j-img{
+                width: 400px; 
+                margin-bottom: 30px;
+            }
+            .j-text-body{
+                display: flex; 
+                flex-direction: column; 
+                align-items: center; 
+                justify-content: center;
+                row-gap: 35px;
+                bottom: 250px;
+                left: 42%;
+            }
+            .j-button{
+                height: 40px;
+                width: 140px;
+                border: 0px;
+                border-radius: 20px;
+                background: #374e93;
+                color: #fff;
+                font-size: 15px;
+                cursor: pointer;
+                font-family: 'Noto Sans';
+            }
+        </style>
+        <script>
+            const _getHomeUrl = () => {
+                window.location = window.location.origin
+            }
+        </script>
+    </head>
+    <body class="j-body">
+        <img class="j-img" src="https://static.buyerstage.io/static-assets/not-found.svg" alt="Page not found" />
+        <div class="j-text-body">
+            <div class="j-text">Page Not Found</div>
+            <button onclick="_getHomeUrl()" class="j-button">Back to home</button>
+        </div>
+    </body>
+</html>

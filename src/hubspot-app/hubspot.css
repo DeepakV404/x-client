@@ -1,0 +1,290 @@
+/* hubspot form */
+
+.j-hubspot-room-card .ja-card-body{
+    padding: 0px;
+}
+
+.j-hubspot-choose-header{
+    height: 140px;
+    background: #425b760d;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* .j-hubspot-primary-button{
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 0 ;
+    margin-top: 20px;
+} */
+
+/* .j-hubspot-secondary-button{
+    background-color: var(--primary-color);
+    color: #fff !important;
+    border: 1px solid var(--primary-color) !important;
+    box-shadow: 0 0 0 ;
+} */
+
+.j-hubspot-fi-has-extra .ja-form-item-label label{
+    width: 100%;
+}
+
+
+.j-hubspot-extra-reload-icon{
+    background: transparent;
+    border: 1px solid #e6ebf1;
+    color: #454550;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.j-hubspot-template-dropdown{
+    padding: 5px !important;   
+    margin-bottom: 3px;
+}
+
+.j-hs-create-room-modal .ja-modal-content{
+    padding: 15px;
+}
+
+.j-hubspot-create-room-modal .ja-modal-content{
+    padding: 15px;
+}
+
+.j-hubspot-create-room-modal .ja-modal-close{
+    width: 16px;
+    height: 18px;
+}
+
+.j-hubspot-create-room-modal .ja-modal-close-x{
+    font-size: 12px;
+}
+
+.j-hubspot-room-col{
+    border-right: 1px solid #F0F0F0;
+    padding: 12px;
+}
+
+/* hubspot form */
+
+/* hubspot overwrite */
+
+.hubspot-form .ja-form-item{
+    margin-bottom: 10px !important;
+}
+
+.hubspot-form .ja-input, .hubspot-form .ja-input-suffix, .hubspot-form .ja-select-selection-item, .hubspot-form .ja-select-selection-placeholder{
+    font-size: 13px !important;
+}
+
+
+.hubspot-form .ja-form-item-label >label{
+    font-family: 'Inter500', sans-serif !important;
+    font-size: 13px;
+}
+
+.hubspot-form .ja-form-item-explain-error{
+    font-size: 11px;
+    float: right;
+}
+
+.hubspot-form .ja-form-item-explain-error{
+    font-size: 10px;
+    float: right;
+}
+
+.hubspot-form .ja-form-item .ja-form-item-label >label.ja-form-item-required:not(.ja-form-item-required-mark-optional)::before{
+    display: none;
+}
+
+.hubspot-form .ja-form-item .ja-form-item-label >label.ja-form-item-required:not(.ja-form-item-required-mark-optional)::after{
+    display: inline-block;
+    margin-inline-start: 4px;
+    color: #ff4d4f;
+    font-size: 8px;
+    line-height: 1;
+    content: "*";
+    visibility: visible;
+}
+
+/* hubspot form */
+
+/* COMMON */
+
+.hubspot .j-hs-app-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hubspot .j-app-body {
+    height: 100%;
+    margin-top: auto;
+}
+.hubspot .ja-layout-header.j-app-header{
+    display:none;
+}
+.hubspot .j-room-header > .ja-space-item:first-child > .ja-space{
+    display:none;
+}
+.hubspot .j-room-header > .ja-space-item:nth-child(2) > .ja-space{
+    left: 260px !important;
+}
+.hubspot .j-room-header > .ja-space-item:nth-child(2) div > .ja-space-item:first-child {
+    display: none;
+}
+.hubspot .j-room-header > .ja-space-item:nth-child(3) > div > .ja-space-item:first-child {
+    display: none;
+}
+.hubspot .j-room-header-segment .ja-segmented-item:last-child{
+    display:none;
+}
+.hubspot .j-activity-content{
+    display:none;
+}
+.hubspot .j-room-listing-body > div > .ja-row > .ja-col:has(+ .j-activity-content){
+    max-width: max-content !important;
+    overflow: unset;
+}
+/* TOP HEADER */
+.hubspot .hubspot-top .j-room-header{
+    height: 55px;
+    padding: 10px 20px; 
+}
+/* LEFT HEADER */
+.hubspot .hubspot-left .j-room-header{
+    width:auto;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    border:none !important;
+    padding:20px 10px;
+    justify-content: flex-start;
+}
+.hubspot .hubspot-left  .j-app-body {
+    height: auto;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.hubspot .hubspot-left  .j-room-header > .ja-space-item:nth-child(2) div {
+    gap: 0 !important;
+    position: relative !important;
+    left: auto !important;
+    transform: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hubspot .hubspot-left  .j-room-header-segment .ja-segmented-item{
+    width:100%;
+}
+
+.hubspot .hubspot-left .j-room-listing-body{
+    height: 100vh;
+    width: 100%;
+}
+
+.hubspot .j-preview-button{
+    display: none !important;
+}
+
+.hubspot .j-room-header{
+    height: auto;
+    border-bottom:none;
+    padding: 0px;
+}
+
+.hubspot .j-room-listing-body{
+    background-color:#f5f7f9;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    padding: 10px;
+    height: calc(100% - 65px);
+}
+
+.hubspot .j-room-journey-sider, .hubspot .j-room-res-filter-wrap, .hubspot .j-room-buyers-side-nav{
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #ededed !important;
+    box-shadow: none;
+}
+
+.hubspot .j-res-list-col{
+    background-color: #FFFFFF;
+}
+
+body:has(.hubspot) .ja-modal-mask, body:has(.hubspot) .ja-drawer-mask{
+    background: rgb(225 225 225 / 50%) !important
+}
+
+.hubspot .j-room-header-segment .ja-segmented-item {
+    background: #425b760d;
+    border:1px solid var(--primary-color);
+}
+
+.hubspot .j-res-card-type{
+    background-color: #425b760d;
+}
+
+.hubspot .j-room-header-segment .ja-segmented-item-selected{
+    color: var(--primary-color);
+    background-color: #425b7633;
+}
+
+.hubspot .j-buyer-resource-card .ja-card-body{
+    padding: 0px;
+}
+
+.hubspot .j-room-journey-sider, .hubspot .j-room-res-filter-wrap, .hubspot .j-room-buyers-side-nav{
+    height: inherit;
+}
+
+.hubspot .j-room-listing-body > div{
+    padding: 0px !important;
+}
+
+.hubspot .j-room-comments-active{
+    color: var(--primary-color) !important;
+}
+
+.hubspot .j-room-analytics-tabs .ja-tabs-nav{
+    border-radius: 6px;
+} 
+
+.hubspot .j-room-analytics-tabs .ja-tabs-content-holder{
+    border-left: none !important;
+}
+
+.hubspot .j-room-analytics-tabs .ja-tabs-tabpane{
+    padding-block: 2px !important;
+}
+
+.hubspot .j-room-activity-card{
+    height: calc(100vh - 92px);
+}
+
+.hubspot .j-demo-dropdown-select-root{
+    height: calc(100vh - 400px);
+}
+
+.hubspot .j-demo-dropdown-select-empty-root{
+    height: calc(100vh - 400px);
+}
+
+.j-hs-disabled-contact{
+    background-color: #F5F7F9;
+}
+
+.j-hs-mapping-contact{
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.j-hs-mapping-contact.selected{
+    background-color: #06b6ac1a;
+}

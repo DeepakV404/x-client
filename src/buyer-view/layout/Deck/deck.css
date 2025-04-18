@@ -1,0 +1,299 @@
+/* 
+
+----------------------------------------Always use deck as prefix class---------------------------------
+
+*/
+
+.j-deck-hero{
+    background: var(--base-primary-background);
+    height: 100%;
+}
+
+
+:root{
+    --base-color:   #ffffff;
+    --base-secondary-background:  #202020; 
+    --base-primary-background: #0C0C0C;
+    --base-resource-card-hover: #FFFFFF1A;
+}
+
+
+.light-mode{
+    --base-color:   black;
+    --base-header-background:  #161a30; 
+    --base-background: #f0f4f7;
+    --base-resource-card-hover: #FFFFFF1A;
+    --base-border-color:  #0769E71F;
+    --base-resource-card-background: #ffffff;
+}
+
+.j-deck-email-gate .ja-form-item-explain-error{
+    text-align: end !important;
+}
+
+.j-deck-gated-form{
+    height: auto;
+    min-height: 350px;
+    width: auto;
+    max-width: 450px;
+    border-radius: 26px;
+    padding: 50px;
+}
+
+.j-deck-header{
+    height: 49px;
+    width: 100%;
+    position: relative;
+    background: var(--base-secondary-background);
+    border-bottom: 1px solid #303030;
+    display: flex;
+    align-items: center;
+}
+
+.j-deck-header-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.j-deck-theme-switcher{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--base-primary-background);
+    color: var(--base-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.j-deck-container{
+    height: calc(100% - 200px);
+    background: var(--base-primary-background);
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, max-content));
+    gap: 20px;
+}
+
+.j-deck-resource-card{
+    width: 310px;
+    aspect-ratio: 16 / 9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid var(--base-border-color);
+    background-color: var(--base-resource-card-background);
+}
+
+.j-deck-resource-card:hover{
+    background: var(--base-resource-card-hover);
+}
+
+.j-deck-resource-card-image{
+    height: 180px;
+    width: 300px;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.j-deck-resource-card-content{
+    width: 100%;
+}
+
+.j-deck-resource-card-content-title {
+    flex: 1;
+    padding-inline: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--base-color);
+}
+
+.j-deck-sider{
+    background-color: var(--base-secondary-background) !important;
+}
+
+.j-deck-sider .ja-layout-sider-children{
+    height: 100vh !important;
+}
+
+.j-deck-sider-header{
+    height: 49px;
+    gap: 0px;
+    border-bottom: 1px solid #303030;
+    border-right: 1px solid #303030;
+    display: flex;
+    align-items: center;
+    padding-inline: 20px 5px;
+}
+
+.j-deck-resource-view-header {
+    height: 49px;
+    background-color: var(--base-secondary-background);
+    display: flex;
+    align-items: center;
+    padding-inline: 20px !important;
+    line-height: unset !important;
+    border-bottom: 1px solid #303030;
+    color: var(--base-color) !important;
+}
+
+.j-deck-resource-view-content{
+    height: calc(100% - 50px);
+    padding: 56px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.j-deck-react-player{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.j-deck-react-player > div{
+    aspect-ratio: 16/9;
+    height: unset !important;
+    max-width: 1440px;
+}
+
+.j-deck-resource-list-card{
+    width: 150px;
+    height: 120px;
+    padding: 11px 12px 11px 11px;
+    gap: 0px;
+    border-radius: 6px;
+    color: var(--base-color);
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+.j-deck-resource-list-card:hover{
+    background: var(--base-resource-card-hover);
+}
+
+.j-deck-resource-list-card-image{
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.j-deck-resource-list-card-title,
+.j-deck-resource-view-header-title{
+    color: var(--base-color);
+}
+
+.j-deck-resource-list-card-active{
+    border-color: #0065E5;
+}
+
+.j-deck-content{
+    background: var(--base-primary-background);
+}
+
+.j-deck-resources-preview-scroll-snap{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.j-deck-pdf-layout {
+    flex-grow: 1;
+    height: 100%;
+    padding: 0px;
+    max-width: calc(100% - 150px);
+}
+
+.j-deck-pdf-layout .rpv-core__inner-pages>div{
+    margin: 20px 0px;
+}
+
+.j-deck-pdf-layout .rpv-core__inner-pages::-webkit-scrollbar{
+    display: none;
+}
+
+.j-deck-pdf-layout .rpv-core__inner-page{
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.j-deck-resource-view-header .rpv-zoom__popover-target-scale{
+    color: #fff;
+}
+
+.j-deck-resource-view-header .rpv-zoom__popover-target-arrow{
+    border-color: rgb(255 255 255) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+
+.j-library-deck-resource-card:hover{
+    box-shadow: 0px 7px 10px -8px rgba(0,0,0,0.1)
+}
+
+
+.j-deck-react-player>div>iframe{
+    border-radius: 8px;
+}
+
+.j-deck-resource-viewer-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: scale-down;
+}
+
+.j-deck-report-table-resource-card {
+    width: 100%;
+    border: 1px solid rgba(1, 102, 229, 0.1);
+    border-radius: 6px;
+    padding-inline: 12px;
+    padding-block: 8px;
+}  
+
+.j-deck-report-table-resource-card.selected{
+    background: #0166E51A;
+}
+
+/* Media Query DECK */
+
+@media (max-width: 600px) {
+
+    .j-deck-resource-card{
+        width: unset;
+    }
+
+    .j-deck-container{
+        width: 100%;
+        height: calc(100% - 60px);
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(325px, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(325px, max-content));
+        gap: 12px;
+        padding: 60px 0px 0px 0px !important;
+        background: var(--base-primary-background);
+    }
+
+    .j-deck-header-title, .j-deck-resource-view-header-title{
+        display: none;
+    }
+
+    .j-deck-sider{
+        display: none !important;
+    }
+
+    .j-deck-resource-view-content {
+        padding: 20px !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    .j-deck-pdf-layout{
+        max-width: 100% !important;
+    }
+}
+
+/* Media Query DECK*/

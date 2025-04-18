@@ -1,0 +1,7 @@
+/node_modules/
+/dist/
+/.idea/.gitignore
+/public/pspdfkit-lib
+/.vscode
+/.idea/
+.DS_Store

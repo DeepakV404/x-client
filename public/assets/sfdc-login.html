@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" style="height:100%;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://static.buyerstage.io/static-assets/favicon.ico" />
+    <title>Salesforce - Buyerstage</title>
+    <style>
+      @font-face {
+          font-family: "OpenSans300";
+          src: url("/font/opensans/OpenSans300.ttf") format("truetype");
+          font-display: swap;
+      }
+
+      @font-face {
+        font-family: "OpenSans400";
+        src: url("/font/opensans/OpenSans400.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "OpenSans500";
+        src: url("/font/opensans/OpenSans500.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "OpenSans600";
+        src: url("/font/opensans/OpenSans600.ttf") format("truetype");
+        font-display: swap;
+      }
+      .j-class-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .j-sfdc-login-button{
+        height: 45px;
+        width: 162px;
+        background: transparent;
+        color: #1b96ff !important;
+        letter-spacing: 0.3px;
+        border: 1px solid #1b96ff !important;
+        box-shadow: 0 0 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-family: 'Inter400', sans-serif !important;
+        padding-inline: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body style="height:100%; margin: 0px">
+    <script>
+      function authorize () {
+        let authWindow = window.open('/', '_blank', 'location=yes,width=800,height=600,scrollbars=yes,status=yes');
+        var closeTimer = setInterval(checkClose, 300); 
+
+        function checkClose() {
+          if(authWindow.document.location.pathname === "/success"){
+            authWindow.close()
+            window.location.reload()
+          }
+          
+          if(authWindow.closed) {  
+            clearInterval(closeTimer);  
+            window.location.reload()
+          }  
+        }
+      }
+    </script>
+    <div class="j-class-container">
+      <div class="j-sfdc-login-button" onclick="authorize()">
+        Login into Buyerstage
+      </div>
+    </div>
+  </body>
+</html>

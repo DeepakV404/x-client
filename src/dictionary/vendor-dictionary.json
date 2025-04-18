@@ -1,0 +1,29 @@
+{
+    "library" : {
+        "title" :   "Assets",
+        "singularTitle" : "Asset"
+    },
+    "links" : {
+        "title" :   "Links",
+        "singularTitle" : "Links"
+    },
+    "rooms" : {
+        "title" :   "Leads",
+        "singularTitle" : "Lead"
+    },
+    "templates" : {
+        "title" :   "Pods",
+        "singularTitle" : "Pod"
+    },
+    "buyingCommittee" : {
+        "title" :   "Shared Contacts",
+        "singularTitle" : "Shared Contact"
+    },
+    "buyers" :  {
+        "title" :   "Contacts",
+        "singularTitle" : "Contact"
+    },
+    "analytics" :  {
+        "title" :   "Dashboard"
+    }
+}

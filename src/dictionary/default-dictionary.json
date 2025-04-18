@@ -1,0 +1,29 @@
+{
+    "library" : {
+        "title" :   "Library",
+        "singularTitle" : "Library"
+    },
+    "links" : {
+        "title" :   "Links",
+        "singularTitle" : "Links"
+    },
+    "rooms" : {
+        "title" :   "Rooms",
+        "singularTitle" : "Room"
+    },
+    "templates" : {
+        "title" :   "Templates",
+        "singularTitle" : "Template"
+    },
+    "buyingCommittee" : {
+        "title" :   "Contacts",
+        "singularTitle" : "Contact"
+    },
+    "buyers" :  {
+        "title" :   "Contacts",
+        "singularTitle" : "Contact"
+    },
+    "analytics" :  {
+        "title" :   "Analytics"
+    }
+}

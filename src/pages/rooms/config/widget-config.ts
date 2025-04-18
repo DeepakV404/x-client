@@ -1,0 +1,10 @@
+export const WIDGET_HEADER          =   "HEADER";
+export const WIDGET_TEXT            =   "TEXT";
+export const WIDGET_RESOURCE        =   "RESOURCE";
+export const WIDGET_BUTTON          =   "BUTTON";
+export const WIDGET_CAROUSEL        =   "CAROUSEL";
+export const WIDGET_EMBEDDED        =   "EMBEDDED";
+export const WIDGET_FEATURE         =   "FEATURE";
+export const WIDGET_CONTACT_CARD    =   "CONTACT_CARD";
+export const WIDGET_TEAMS_CARD      =   "TEAMS_CARD";
+export const WIDGET_FILE_UPLOAD     =   "FILE_UPLOAD";
